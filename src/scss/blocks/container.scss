@@ -1,0 +1,16 @@
+.container{
+    height: 201px;
+    width: 326px;
+    margin-block: auto;
+    margin-inline: auto;
+    padding: 60px;
+    background-color:var(--color-container);
+    border-radius: 10px;
+    
+
+    &--logo{
+        margin-bottom: 16px;
+        border-radius: 10px 100px 10px 10px;
+    }
+}
+
