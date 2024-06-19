@@ -3,14 +3,22 @@
     width: 326px;
     margin-block: auto;
     margin-inline: auto;
-    padding: 60px;
+    padding: 50px;
     background-color:var(--color-container);
     border-radius: 10px;
     
+    
 
     &--logo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        
+        
         margin-bottom: 16px;
         border-radius: 10px 100px 10px 10px;
+
     }
 }
 

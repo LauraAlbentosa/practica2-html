@@ -1,0 +1,41 @@
+@use '../mixins/pseudo.scss' as *;
+
+
+.slider{
+    display: flex;
+    flex-wrap: wrap;
+
+    &__bar{
+        position: relative;
+        height: 20px;
+        width:100%;
+        background-color: var(--color-background);
+        border-radius: 10px;
+
+        
+        &::after{
+            @include pseudo (193px, 14px){
+                top: 2px;
+                background-image:linear-gradient(#FFA197,#FF4A95 ) ;
+                border-radius: 10px; 
+            }
+        }
+
+        &::before{
+
+            @include pseudo (10px,10px){
+                left: 180px;
+                top:4px;
+                border-radius: 50%;
+                background-color: white;
+                z-index: 1;
+            }
+        }
+    }
+
+    &__values{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+}

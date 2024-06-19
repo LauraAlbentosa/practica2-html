@@ -3,13 +3,19 @@
     align-items: center;
     justify-content: center;
     gap: 10px;
+    margin-top: 20px;
 
 
     &__icon{
         width: 48.15px;
         height: 48px;
-        background-color:var(--color-background) ;
+        padding: 12px 14px 12px 14px;
+        background-color:var(--color-background);
+        border-radius: 10px;
+        
     }
 
 }
+
+
 
