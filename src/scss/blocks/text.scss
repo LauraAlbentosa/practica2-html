@@ -5,4 +5,15 @@
     &--bold{
         font-weight: 900;
     }
+
+    &--dark{
+        color: var(--color-background);
+        font-size: 40px;
+        font-weight: 900;
+        &--bold{
+            opacity: .5;
+            font-size: 12px;
+
+        }
+    }
 }

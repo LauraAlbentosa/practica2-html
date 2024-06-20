@@ -1,3 +1,6 @@
+
+@use '../mixins/responsive.scss' as *;
+
 .container{
     height: 201px;
     width: 326px;
@@ -6,6 +9,10 @@
     padding: 50px;
     background-color:var(--color-container);
     border-radius: 10px;
+    @include responsive(laptop){
+        width: 540px;
+    }
+    
     
     
 
@@ -14,11 +21,38 @@
         flex-direction: column;
         justify-content: center;
         align-items: start;
-        
-        
         margin-bottom: 16px;
         border-radius: 10px 100px 10px 10px;
+        @include responsive(laptop){
+            width: 350px;
+        }
 
+    }
+
+    &--position{
+        height: 160px;
+        position: relative;
+    }
+
+    &--number{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:10px;
+        padding: 0;
+        position: absolute;
+        top: 130px;
+        left: 74px;
+        width: 179px;
+        height:72px;
+        background-color: white;
+
+        @include responsive(laptop){
+            top:-50px;
+            left: 121px;
+            
+        }
+        
     }
 }
 
