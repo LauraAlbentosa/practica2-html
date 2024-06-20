@@ -10,6 +10,7 @@
   border-radius: 10px;
   @include responsive(laptop) {
     width: 540px;
+    height: 160px;
   }
 
   &--logo {
@@ -21,11 +22,11 @@
     border-radius: 10px 100px 10px 10px;
     @include responsive(laptop) {
       width: 350px;
+      height: 201px;
     }
   }
 
   &--position {
-    height: 160px;
     position: relative;
   }
 
@@ -41,6 +42,7 @@
     width: 179px;
     height: 72px;
     background-color: white;
+    border: none;
 
     @include responsive(laptop) {
       top: -50px;

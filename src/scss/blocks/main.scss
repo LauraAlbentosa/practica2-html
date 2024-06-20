@@ -1,21 +1,19 @@
 @use '../mixins/responsive.scss' as *;
 
 .main {
-    display: grid;
-    align-content: center;
-    height: 100vh;
-    background-image: url(../../assets/images/bg-mobile.png);
-    background-size: 120%;
+  display: grid;
+  align-content: center;
+  height: 100vh;
+  background-image: url(../../assets/images/bg-mobile.png);
+  background-size: 120%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+
+  @include responsive(laptop) {
+    grid-template-columns: 400px 600px;
+    justify-content: center;
+    background-image: url(../../assets/images/bg-desktop.png);
     background-repeat: no-repeat;
     background-position: bottom;
-
-    @include responsive(laptop){
-        grid-template-columns: 400px 600px;
-        justify-content: center;
-        background-image: url(../../assets/images/bg-desktop.png);
-        background-repeat: no-repeat;
-        background-position: bottom;
-    }
-
-
+  }
 }
